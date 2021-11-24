@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">android1Lesson02-2</string>
+    <string name="app_name">Lesson02</string>
+    <string name="key_4">4</string>
+    <string name="key_0">0</string>
+    <string name="key_dot">.</string>
+    <string name="key_Itog">=</string>
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_9">9</string>
+    <string name="key_x">x</string>
+    <string name="key_Diff">-</string>
+    <string name="key_Summ">+</string>
+    <string name="key_sq">√</string>
+    <string name="key_Div">/</string>
+    <string name="key_LED">0</string>
+    <string name="key_8">8</string>
+    <string name="key_7">7</string>
+    <string name="key_reset">CE</string>
+    <string name="key_c">C</string>
+    <string name="key_swith">+/-</string>
+    <string name="imgDescription">test img</string>
 </resources>
