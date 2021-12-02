@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Lesson02</string>
+    <string name="app_name">Lesson 02-03-04-05</string>
     <string name="key_4">4</string>
     <string name="key_0">0</string>
     <string name="key_dot">.</string>
@@ -18,8 +18,12 @@
     <string name="key_LED">0</string>
     <string name="key_8">8</string>
     <string name="key_7">7</string>
-    <string name="key_reset">CE</string>
+    <string name="key_del">CE</string>
     <string name="key_c">C</string>
     <string name="key_swith">+/-</string>
-    <string name="imgDescription">test img</string>
+
+    <string name="title_activity_main_landscape">MainActivity_landscape</string>
+    <string name="todo">TODO</string>
+    <string name="description_image">TODO</string>
+
 </resources>
