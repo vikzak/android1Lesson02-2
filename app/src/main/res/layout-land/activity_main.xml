@@ -18,12 +18,11 @@
 
     <Button
         android:id="@+id/buttonSwitch"
+        style="@style/CalcKey.ThemeSelect"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/my_button_default"
-        android:enabled="false"
         android:onClick="buttonClick"
         android:text="@string/key_swith"
         android:textSize="@dimen/default_fontsize_land"
@@ -34,11 +33,11 @@
 
     <Button
         android:id="@+id/button0"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/my_button_default"
         android:onClick="buttonClick"
         android:text="@string/key_0"
         android:textSize="@dimen/default_fontsize_land"
@@ -49,10 +48,10 @@
 
     <Button
         android:id="@+id/button1"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/my_button_default"
         android:onClick="buttonClick"
         android:text="@string/key_1"
         android:textSize="@dimen/default_fontsize_land"
@@ -63,10 +62,10 @@
 
     <Button
         android:id="@+id/button4"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#434040"
         android:onClick="buttonClick"
         android:text="@string/key_4"
         android:textSize="@dimen/default_fontsize_land"
@@ -77,10 +76,10 @@
 
     <Button
         android:id="@+id/button7"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#434040"
         android:onClick="buttonClick"
         android:text="@string/key_7"
         android:textSize="@dimen/default_fontsize_land"
@@ -92,12 +91,12 @@
 
     <Button
         android:id="@+id/buttonC"
+        style="@style/CalcKey.C"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/button_reset"
         android:onClick="buttonClick"
         android:text="@string/key_c"
         android:textSize="@dimen/default_fontsize_land"
@@ -108,10 +107,10 @@
 
     <Button
         android:id="@+id/buttonDiff"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/button_operations"
         android:onClick="buttonClick"
         android:text="@string/key_Diff"
         android:textSize="@dimen/default_fontsize_land"
@@ -123,10 +122,10 @@
 
     <Button
         android:id="@+id/button9"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#434040"
         android:onClick="buttonClick"
         android:text="@string/key_9"
         android:textSize="@dimen/default_fontsize_land"
@@ -138,10 +137,10 @@
 
     <Button
         android:id="@+id/buttonMul"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/button_operations"
         android:onClick="buttonClick"
         android:text="@string/key_x"
         android:textSize="@dimen/default_fontsize_land"
@@ -152,12 +151,12 @@
 
     <Button
         android:id="@+id/buttonCE"
+        style="@style/CalcKey.CE"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
-        android:backgroundTint="@color/button_del"
         android:onClick="buttonClick"
         android:text="@string/key_del"
         android:textSize="@dimen/default_fontsize_land"
@@ -168,10 +167,10 @@
 
     <Button
         android:id="@+id/button3"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/my_button_default"
         android:onClick="buttonClick"
         android:text="@string/key_3"
         android:textSize="@dimen/default_fontsize_land"
@@ -182,10 +181,10 @@
 
     <Button
         android:id="@+id/button6"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#434040"
         android:onClick="buttonClick"
         android:text="@string/key_6"
         android:textSize="@dimen/default_fontsize_land"
@@ -196,10 +195,10 @@
 
     <Button
         android:id="@+id/button8"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="#434040"
         android:onClick="buttonClick"
         android:text="@string/key_8"
         android:textSize="@dimen/default_fontsize_land"
@@ -210,10 +209,10 @@
 
     <Button
         android:id="@+id/button5"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/my_button_default"
         android:onClick="buttonClick"
         android:text="@string/key_5"
         android:textSize="@dimen/default_fontsize_land"
@@ -225,11 +224,11 @@
 
     <Button
         android:id="@+id/buttonItog"
+        style="@style/CalcKey.Itog"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/button_itog"
         android:onClick="buttonClick"
         android:text="@string/key_Itog"
         android:textSize="@dimen/default_fontsize_land"
@@ -240,11 +239,11 @@
 
     <Button
         android:id="@+id/buttonDot"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/my_button_default"
         android:onClick="buttonClick"
         android:text="@string/key_dot"
         android:textSize="@dimen/default_fontsize_land"
@@ -255,10 +254,10 @@
 
     <Button
         android:id="@+id/buttonSum"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/button_operations"
         android:onClick="buttonClick"
         android:text="@string/key_Summ"
         android:textSize="@dimen/default_fontsize_land"
@@ -269,12 +268,12 @@
 
     <Button
         android:id="@+id/buttonSq"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
-        android:backgroundTint="#434040"
         android:enabled="false"
         android:onClick="buttonClick"
         android:text="@string/key_sq"
@@ -286,12 +285,12 @@
 
     <Button
         android:id="@+id/buttonDiv"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="8dp"
-        android:backgroundTint="@color/button_operations"
         android:onClick="buttonClick"
         android:text="@string/key_Div"
         android:textSize="@dimen/default_fontsize_land"
@@ -302,10 +301,10 @@
 
     <Button
         android:id="@+id/button2"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="4dp"
-        android:backgroundTint="@color/my_button_default"
         android:onClick="buttonClick"
         android:text="@string/key_2"
         android:textSize="@dimen/default_fontsize_land"

@@ -1,11 +1,20 @@
 package com.example.android1lesson02_2;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private static final String INPUT_ARG = "INPUT_ARG"; // аргумент для передачи
@@ -15,12 +24,39 @@ public class MainActivity extends AppCompatActivity {
     // кнопки:       +            -          /           *          .           +/-             C     CE       корень      =
     private String input,Answer;
     private String lastKeyOperation;
+    private static final String ARG_SAVED_THEME = "ARG_SAVED_THEME";
+    private int currrentTheme = R.style.Theme_Android1Lesson022_Second; //4
 
+
+    private final ActivityResultLauncher<Intent> launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), new ActivityResultCallback<ActivityResult>() {
+        @Override
+        public void onActivityResult(ActivityResult result) {
+            if (result.getResultCode() == Activity.RESULT_OK){
+                Theme theme = (Theme) result.getData().getSerializableExtra(SelectThemeActivity.EXTRA_THEME);
+                storage.saveTheme(theme);
+                recreate();
+                //Toast.makeText(MainActivity.this, theme.getName(), Toast.LENGTH_SHORT).show();
+            }
+
+        }
+    });
+
+    private ThemeStorage storage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        storage = new ThemeStorage(this);
+
+        if (savedInstanceState != null){
+            currrentTheme = savedInstanceState.getInt(ARG_SAVED_THEME);
+        }
+        //setTheme(currrentTheme); // передаем 2ю тему
+        setTheme(storage.getSavedTheme().getTheme()); // передаем 2ю тему
+        setContentView(R.layout.activity_main);
+
         // заранее определяем Screen, чтобы передать в него при повороте экрана данные
         Screen = findViewById(R.id.textViewLED);
         // проверка savedInstanceState
@@ -53,6 +89,21 @@ public class MainActivity extends AppCompatActivity {
         button7 = findViewById(R.id.button7);
         button8 = findViewById(R.id.button8);
         button9 = findViewById(R.id.button9);
+
+
+
+        findViewById(R.id.buttonSwitch).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SelectThemeActivity.class);
+                intent.putExtra(SelectThemeActivity.EXTRA_THEME,storage.getSavedTheme());
+                launcher.launch(intent);
+            }
+        });
+
+//        if (changeTheme != null){
+//            changeTheme
+//        }
     }
 
     public void buttonClick(View view){
@@ -76,8 +127,20 @@ public class MainActivity extends AppCompatActivity {
                 Answer = input;
                 break;
             case "CE":
-                String newText = input.substring(0,input.length()-1);
-                input = newText;
+                if (input != null){ // если на экране не пусто
+                    if (input.length() > 0){
+                        String newText = input.substring(0,input.length()-1);
+                        if (newText.length() == 0){
+                            newText = "";
+                        }
+                        input = newText;
+                    }
+                } else {
+                    input = "";
+                }
+                break;
+            case "Th":
+                input = "";
                 break;
             default:
                 if (input == null){
@@ -90,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
                 input+=data;
         }
         Screen.setText(input);
+
     }
 
     private void calculateMetod(){
@@ -164,7 +228,10 @@ public class MainActivity extends AppCompatActivity {
     public void onSaveInstanceState(@NonNull Bundle instanceState){
         super.onSaveInstanceState(instanceState);
         instanceState.putString(INPUT_ARG, input); //1
+        instanceState.putInt(ARG_SAVED_THEME, currrentTheme);
     }
+
+
 
     // остальные методы на момент задания №3 не используются, комментируем их
 

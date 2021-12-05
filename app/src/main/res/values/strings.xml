@@ -20,10 +20,14 @@
     <string name="key_7">7</string>
     <string name="key_del">CE</string>
     <string name="key_c">C</string>
-    <string name="key_swith">+/-</string>
+    <string name="key_swith">Th</string>
 
     <string name="title_activity_main_landscape">MainActivity_landscape</string>
     <string name="todo">TODO</string>
     <string name="description_image">TODO</string>
+    <string name="theme_one">One</string>
+    <string name="theme_two">Two</string>
+    <string name="theme_three">Three</string>
+    <string name="theme_four">Four</string>
 
 </resources>
