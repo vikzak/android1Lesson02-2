@@ -17,8 +17,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private static final String INPUT_ARG = "INPUT_ARG"; // аргумент для передачи
     private TextView screenLED;
-    private Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9;
-    private Button buttonSum, buttonDiff, buttonDiv, buttonMul, buttonDot, buttonSwitch, buttonC, buttonCE, buttonSq, buttonItog;
+    //private Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9;
+    //private Button buttonSum, buttonDiff, buttonDiv, buttonMul, buttonDot, buttonSwitch, buttonC, buttonCE, buttonSq, buttonItog;
     // кнопки:       +            -          /           *          .           +/-             C     CE       корень      =
     private String input, Answer;
     private String lastKeyOperation;
@@ -64,29 +64,29 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // - функциональные кнопки
-        buttonC = findViewById(R.id.buttonC);
-        buttonCE = findViewById(R.id.buttonCE);
+        Button buttonC = findViewById(R.id.buttonC);
+        Button buttonCE = findViewById(R.id.buttonCE);
         // - кнопки операций
-        buttonSum = findViewById(R.id.buttonSum);
-        buttonDiff = findViewById(R.id.buttonDiff);
-        buttonDiv = findViewById(R.id.buttonDiv);
-        buttonMul = findViewById(R.id.buttonMul);
-        buttonSq = findViewById(R.id.buttonSq);
-        buttonItog = findViewById(R.id.buttonItog);
-        buttonSwitch = findViewById(R.id.buttonSwitch);
+        Button buttonSum = findViewById(R.id.buttonSum);
+        Button buttonDiff = findViewById(R.id.buttonDiff);
+        Button buttonDiv = findViewById(R.id.buttonDiv);
+        Button buttonMul = findViewById(R.id.buttonMul);
+        Button buttonSq = findViewById(R.id.buttonSq);
+        Button buttonItog = findViewById(R.id.buttonItog);
+        Button buttonSwitch = findViewById(R.id.buttonSwitch);
         // - точка
-        buttonDot = findViewById(R.id.buttonDot);
+        Button buttonDot = findViewById(R.id.buttonDot);
         // - цифровые кнопки
-        button0 = findViewById(R.id.button0);
-        button1 = findViewById(R.id.button1);
-        button2 = findViewById(R.id.button2);
-        button3 = findViewById(R.id.button3);
-        button4 = findViewById(R.id.button4);
-        button5 = findViewById(R.id.button5);
-        button6 = findViewById(R.id.button6);
-        button7 = findViewById(R.id.button7);
-        button8 = findViewById(R.id.button8);
-        button9 = findViewById(R.id.button9);
+        Button button0 = findViewById(R.id.button0);
+        Button button1 = findViewById(R.id.button1);
+        Button button2 = findViewById(R.id.button2);
+        Button button3 = findViewById(R.id.button3);
+        Button button4 = findViewById(R.id.button4);
+        Button button5 = findViewById(R.id.button5);
+        Button button6 = findViewById(R.id.button6);
+        Button button7 = findViewById(R.id.button7);
+        Button button8 = findViewById(R.id.button8);
+        Button button9 = findViewById(R.id.button9);
 
 
         findViewById(R.id.buttonSwitch).setOnClickListener(new View.OnClickListener() {
