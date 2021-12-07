@@ -25,9 +25,10 @@
     <string name="title_activity_main_landscape">MainActivity_landscape</string>
     <string name="todo">TODO</string>
     <string name="description_image">TODO</string>
-    <string name="theme_one">One</string>
-    <string name="theme_two">Two</string>
-    <string name="theme_three">Three</string>
-    <string name="theme_four">Four</string>
+    <string name="theme_one">Тема №1</string>
+    <string name="theme_two">Тема №2</string>
+    <string name="theme_three">Тема №3</string>
+    <string name="theme_four">Тема №4</string>
+    <string name="my_git_url">https://github.com/vikzak/android1Lesson02-2</string>
 
 </resources>

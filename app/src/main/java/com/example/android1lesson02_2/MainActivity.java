@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -63,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
             screenLED.setText(input);
         }
 
+
+
         // - функциональные кнопки
         Button buttonC = findViewById(R.id.buttonC);
         Button buttonCE = findViewById(R.id.buttonCE);
@@ -101,6 +104,18 @@ public class MainActivity extends AppCompatActivity {
 //        if (changeTheme != null){
 //            changeTheme
 //        }
+        findViewById(R.id.imageViewGit).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri gitUri = Uri.parse(getString(R.string.my_git_url));
+                Intent intent = new Intent(Intent.ACTION_VIEW, gitUri);
+                startActivity(Intent.createChooser(intent,""));
+            }
+        });
+
+        if (getIntent().hasExtra("hello")){
+            screenLED.setText(getIntent().getStringExtra("hello"));
+        }
     }
 
     public void buttonClick(View view) {

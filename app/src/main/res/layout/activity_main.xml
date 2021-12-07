@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <ImageView
@@ -12,11 +13,13 @@
         android:layout_height="match_parent"
         android:contentDescription="@string/description_image"
         android:scaleType="centerCrop"
-        android:src="@drawable/calc01" />
+        android:src="@drawable/calc01"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
-        style="@style/CalcKey.ThemeSelect"
         android:id="@+id/buttonSwitch"
+        style="@style/CalcKey.ThemeSelect"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -29,8 +32,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button0"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -43,8 +46,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button1"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -57,8 +60,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button4"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -71,8 +74,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button7"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -86,9 +89,8 @@
 
 
     <com.google.android.material.button.MaterialButton
-        style="@style/CalcKey.C"
-        app:rippleColor="@color/black"
         android:id="@+id/buttonC"
+        style="@style/CalcKey.C"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/medium_margin"
@@ -100,11 +102,12 @@
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toStartOf="@+id/buttonCE"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLED" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLED"
+        app:rippleColor="@color/black" />
 
     <Button
-        style="@style/CalcKey.Operation"
         android:id="@+id/buttonDiff"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -118,8 +121,8 @@
 
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button9"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -133,8 +136,8 @@
 
 
     <Button
-        style="@style/CalcKey.Operation"
         android:id="@+id/buttonMul"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -147,8 +150,8 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonDiv" />
 
     <Button
-        style="@style/CalcKey.CE"
         android:id="@+id/buttonCE"
+        style="@style/CalcKey.CE"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/small_margin"
@@ -163,8 +166,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewLED" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button3"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -177,8 +180,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button6"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -191,8 +194,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button9" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button8"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -205,8 +208,8 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonCE" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button5"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -220,8 +223,8 @@
 
 
     <Button
-        style="@style/CalcKey.Itog"
         android:id="@+id/buttonItog"
+        style="@style/CalcKey.Itog"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -234,8 +237,8 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonSum" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/buttonDot"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -248,8 +251,8 @@
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        style="@style/CalcKey.Operation"
         android:id="@+id/buttonSum"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -279,8 +282,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewLED" />
 
     <Button
-        style="@style/CalcKey.Operation"
         android:id="@+id/buttonDiv"
+        style="@style/CalcKey.Operation"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="@dimen/small_margin"
@@ -295,8 +298,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewLED" />
 
     <Button
-        style="@style/CalcKey"
         android:id="@+id/button2"
+        style="@style/CalcKey"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="@dimen/small_margin"
@@ -327,5 +330,16 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewGit"
+        android:layout_width="@dimen/img_atrib"
+        android:layout_height="@dimen/img_atrib"
+        android:layout_marginTop="@dimen/medium_marginp"
+        android:layout_marginEnd="@dimen/medium_margin"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/github_w" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
