@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CalcKey" parent="@style/Widget.MaterialComponents.Button">
+        <!--    android:textSize="@dimen/default_fontsize" -->
+        <!--    android:backgroundTint="@color/my_button_default" -->
+        <item name="android:textSize">@dimen/default_fontsize</item>
+<!--        <item name="android:backgroundTint">@color/my_button_default</item>-->
+    </style>
+    <style name="CalcKey.Operation">
+        <item name="android:backgroundTint">#82B1FF</item>
+    </style>
+    <style name="CalcKey.Itog">
+        <item name="android:backgroundTint">#FF8A65</item>
+    </style>
+    <style name="CalcKey.ThemeSelect">
+        <item name="android:backgroundTint">@color/button_ht</item>
+    </style>
+    <style name="CalcKey.CE">
+        <item name="android:backgroundTint">@color/button_del</item>
+    </style>
+    <style name="CalcKey.C">
+        <item name="android:backgroundTint">@color/button_reset</item>
+    </style>
+
+</resources>

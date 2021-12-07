@@ -1,3 +1,34 @@
 <resources>
-    <string name="app_name">android1Lesson02-2</string>
+    <string name="app_name">Lesson 02-03-04-05</string>
+    <string name="key_4">4</string>
+    <string name="key_0">0</string>
+    <string name="key_dot">.</string>
+    <string name="key_Itog">=</string>
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_9">9</string>
+    <string name="key_x">x</string>
+    <string name="key_Diff">-</string>
+    <string name="key_Summ">+</string>
+    <string name="key_sq">√</string>
+    <string name="key_Div">/</string>
+    <string name="key_LED">0</string>
+    <string name="key_8">8</string>
+    <string name="key_7">7</string>
+    <string name="key_del">CE</string>
+    <string name="key_c">C</string>
+    <string name="key_swith">Th</string>
+
+    <string name="title_activity_main_landscape">MainActivity_landscape</string>
+    <string name="todo">TODO</string>
+    <string name="description_image">TODO</string>
+    <string name="theme_one">Тема №1</string>
+    <string name="theme_two">Тема №2</string>
+    <string name="theme_three">Тема №3</string>
+    <string name="theme_four">Тема №4</string>
+    <string name="my_git_url">https://github.com/vikzak/android1Lesson02-2</string>
+
 </resources>

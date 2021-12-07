@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="my_button_default">#190050</color>
+    <color name="led">#E69C9C9C</color>
+    <color name="button_operations">#0074A8</color>
+    <color name="button_itog">#006E38</color>
+    <color name="button_del">#930000</color>
+    <color name="button_reset">#FF1744</color>
+    <color name="button_ht">#00D9FF</color>
+</resources>

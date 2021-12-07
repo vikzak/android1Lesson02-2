@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_fontsize_land">18sp</dimen>
+    <dimen name="led_font_size_land">48sp</dimen>
+</resources>
